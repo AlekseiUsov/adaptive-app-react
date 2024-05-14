@@ -1,0 +1,84 @@
+.wrapper {
+  padding: 20px;
+}
+
+.title {
+  color: var(--white);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "title number"
+    "text text";
+  gap: 10px;
+  padding: 20px 20px 40px 20px;
+  border-radius: 8px;
+  line-height: 20px;
+  background-color: var(--grey);
+  color: var(--white);
+
+  &__title {
+    margin: 0;
+    grid-area: "title";
+  }
+
+  &__number {
+    grid-area: "number";
+    justify-self: end;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__text {
+    max-width: 200px;
+    grid-area: "text";
+    color: var(--light-grey);
+  }
+}
+
+.last {
+  grid-column: 1 / -1;
+  .card__text {
+    max-width: 350px;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: block;
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  width: 7px;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+@media (max-width: 600px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,23 @@
+@import url("./variables.scss");
+body,
+html {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  height: 100vh;
+}
+// визуально h1 отличается от того, что в макете
+h1 {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
