@@ -1,6 +1,5 @@
 .wrapper {
   padding: 20px;
-  overflow-y: auto;
 }
 
 .title {
@@ -80,6 +79,7 @@
 
 @media (max-width: 600px) {
   .list {
+    overflow-y: auto;
     grid-template-columns: 1fr;
   }
 }
