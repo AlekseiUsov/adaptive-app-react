@@ -79,6 +79,7 @@
 
 @media (max-width: 600px) {
   .list {
+    height: 100vh;
     overflow-y: auto;
     grid-template-columns: 1fr;
   }
