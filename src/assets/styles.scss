@@ -1,13 +1,11 @@
 @import url("./variables.scss");
 body,
 html {
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   margin: 0;
   padding: 0;
   background-color: var(--black);
-  height: 100vh;
 }
 // визуально h1 отличается от того, что в макете
 h1 {
